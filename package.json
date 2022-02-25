@@ -1,0 +1,19 @@
+{
+  "name": "test_parcel_github",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "parcel index.html",
+    "predeploy": "rm -rf dist && parcel build index.html --public-url 'https://github.com/huotsai2fi/test_parcel.git'",
+    "deploy": "gh-pages -d dist"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "gh-pages": "^3.2.3",
+    "jquery": "^3.6.0",
+    "parcel": "^2.3.2"
+  }
+}
